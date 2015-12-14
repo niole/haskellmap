@@ -1,4 +1,4 @@
-mp :: (Int -> Int) -> [Int] -> [Int]
+mp :: ((Int -> Int) -> ([Int] -> [Int]))
 mp _ [] = []
 mp func (x:xs) = func (x) : mp func (xs)
 
